@@ -162,6 +162,21 @@ a:hover {
   font-size: 1.6rem;
 }
 
+/* 小标题样式 - 用于"核心优势"等 */
+.section h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+/* 加粗文字样式 */
+.section strong {
+  font-weight: 600;
+  color: var(--fg);
+}
+
 .section p {
   line-height: 1.6;
   color: var(--muted);
@@ -183,11 +198,98 @@ a:hover {
   color: var(--muted);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 16px;
+/* 下载简历按钮样式 */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  padding: 12px 32px;
+  background-color: var(--accent);
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.download-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  text-decoration: none;
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.download-btn span {
+  font-size: 1.2rem;
+}
+
+/* 作品集样式 */
+.portfolio-list {
   margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.portfolio-item {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.portfolio-item h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: var(--fg);
+}
+
+.portfolio-desc {
+  margin: 8px 0 12px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--accent);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.portfolio-link:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.projects-grid {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
 
 .project-card {
@@ -195,6 +297,9 @@ a:hover {
   border-radius: 12px;
   border: 1px solid var(--border);
   padding: 16px;
+  flex: 1 1 calc(33.333% - 24px);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card h3 {
@@ -205,6 +310,26 @@ a:hover {
 .project-card p {
   margin-top: 0;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    flex: 1 1 calc(50% - 24px);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    flex-direction: column;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+  }
 }
 
 .contact-list {
