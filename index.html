@@ -2,258 +2,426 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>文清 - 个人主页</title>
-  <subtitle>Wenqing - My page</subtitle>
+  <title>左文清 · 策略产品经理</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=20251125" />
+  <meta name="description" content="左文清 — 策略产品经理，聚焦流量策略与交易转化。小米、京东、携程实习经历，具备从问题定位到策略落地与数据验证的全链路产品能力。" />
+  <meta property="og:title" content="左文清 · 策略产品经理" />
+  <meta property="og:description" content="聚焦流量策略与交易转化，数据驱动的产品策略实践者" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=202507300449" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-content">
-      <nav class="site-nav">
-        <a href="#" data-page="home" class="nav-link active">首页 Brief</a>
-        <a href="#" data-page="about" class="nav-link">我 About Me</Menu></a>
-        <a href="#" data-page="projects" class="nav-link">经历 Experience</a>
-        <a href="#" data-page="portfolio" class="nav-link">作品集 Portfolio</a>
-        <a href="#" data-page="looking-for" class="nav-link">目标 Seeking</a>
-        <a href="#" data-page="contact" class="nav-link">联系 Contact</a>
+    <div class="container header-inner">
+      <button class="nav-toggle" aria-label="打开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#" data-page="home" class="nav-link active">首页</a>
+        <a href="#" data-page="about" class="nav-link">关于我</a>
+        <a href="#" data-page="experience" class="nav-link">过往经历</a>
+        <a href="#" data-page="seeking" class="nav-link">求职信息</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="section content-page active">
+    <!-- 首页 -->
+    <section id="home" class="page active">
       <div class="container">
-        <div class="home-content">
-          <h1 class="site-title">左文清</h1>
-          <p class="site-subtitle">产品经理与营销策划</p>
-          <p>聚焦流量策略与交易转化，具备从“问题定位→策略规划→数据验证→推动落地”的全链路产品能力</p>
-          <p class="home-intro">欢迎来到我的页</p>
-          <a href="assets/zuowenqing resume.pdf" download class="download-btn">
-            <span>📄</span>
-            下载简历
-          </a>
+        <div class="hero">
+          <h1 class="hero-title">左文清</h1>
+          <p class="hero-role">产品经理 · 可立即入职</p>
+          <p class="hero-tagline">
+            在流量与交易之间找可验证的策略
+          </p>
+
+          <div class="metric-row">
+            <div class="metric-chip">
+              <span class="metric-value">+20W</span>
+              <span class="metric-label">搜索 DAU 增量</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-value">UCVR +4%</span>
+              <span class="metric-label">携程筛选项优化</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-value">UCTR +7%</span>
+              <span class="metric-label">列表页策略落地</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-value">3 段</span>
+              <span class="metric-label">头部互联网实习</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="assets/zuowenqing resume.pdf" download class="btn btn-primary">
+              下载简历
+            </a>
+            <a href="#" data-page="experience" class="btn btn-secondary nav-trigger">
+              查看经历
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section content-page">
+    <!-- 关于我 -->
+    <section id="about" class="page">
       <div class="container">
-        <h1 class="site-title">文清</h1>
-        <p>
-          专业背景：南大新传 · 华科广告 <br>
-          求学经历： <br>
-          *高中选修大学财经先修课程，获财经比赛国家级奖项<br>
-          *本科专业全方位培养，学习经管、心理、社会、传播、数据等多领域的知识，建立相对广泛的知识储备<br>
-        </p>
-        <p>
-          <strong>核心优势：洞察力、决策力与高逆商</strong><br>
-          * 自主探索与学习能力：非典型文科生、数理逻辑强，实习期间被评价“成长非常快”“老练不怯场”，具备快速融入团队和迭代认知的潜力 <br>
-          * 独立分析与决策能力：多次担任项目负责人，具备柔性leadership；基于对自我认知和行业趋势的分析，通过深入尝试和探索，果断完成从日语到广告传媒、从学术到产品的转型，善于在复杂情境下快速权衡利弊、在多重约束下做出最优决策 <br>
-          * 表达与沟通协作能力：文词犀利、逻辑清晰、善于表达，能高效对接运营、产品、设计、BI、研测等多方，定位卡点、协调资源，务实解决问题 <br>
-          * 市场策划与用户洞察：具备从0到1的完整方案策划能力(调研->策略->落地->预算)，以 “数据支撑+竞品拆解+用户感知+创意审美” 输出策略、归因调优<br>
-        </p>
-      </div>
-    </section>
 
-    <section id="projects" class="section section-alt content-page">
-      <div class="container">
-        <h2>实习经历</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-          <h3>携程 · 用户产品经理</h3>
-          <p class="timeframe">2025.7-2025.10 </p>
-          <p class="background-summary">【核心背景】门票频道流量下降、转化率低，导致GMV增长乏力。作为主入口，列表页屏效低，用户决策成本高、交易转化率低。故聚焦列表页效率提升，通过流量路径及展示策略优化，达成UCTR+1%、UCVR+2%目标，支撑业务增长。</p>
-          <ul class="achievement-list">
+        <div class="about-block">
+          <h3>教育背景</h3>
+          <ul class="edu-list">
             <li>
-              筛选项精细化。筛选项长期未迭代，供需匹配效率低、体验一致性差，基于300w+用户行为数据，SQL分维度下钻锁定“退改”“评分”等高转化需求，并对标Klook、美团等头部竞品，系统规划筛选架构、完善数据埋点，同步输出商品供给和排序建议，推动人货匹配。筛选项优化方案落地，Ctrip  UCTR+7%、UCVR+4%，Trip UCTR+1%、UCVR+2%。
+              <strong>南京大学</strong> · 传播学（硕士研究生）
             </li>
             <li>
-              供给策略优化。分析拆解抖音和小红书玩乐内容趋势&商品策略、挖掘高潜品类，根据核心结论新增周边游入口 、优化商卡距离信息展示；漏斗分析识别“日游”转化强但入口深、曝光不足，辅助新增入口、优化标签展示及广告排序。日游独立入口上线，品类UCTR+10%、UCVR+3%。
-            </li>
-            <li>
-              商卡信息优化。商品标题质量显著低于竞品，与运营协作引入 Qwen 模型做 AI 改写，选取核心品类和热门目的地小流量AB测试，输出“AI 改写+人工调优”路径。I标题AB测试阶段 UCTR+2%，验证AI提效可行性。
-            </li>
-            <li>
-              完善产线生态。规划底tab等基础能力，承接产线内容；拆解 Agoda等竞品的流量路径与搭售策略，提供策略支持。
+              <strong>华中科技大学</strong> · 广告学（本科）
             </li>
           </ul>
-          <p class="target and result">参与成熟阶段产品的日常迭代，重点通过数据分析反哺策略优化，驱动业务指标增长。真正意义上以完整的产品角色参与项目，从需求分析、方案设计到联动运营和数据同学，将前两段实习中积累的方法应用到真实业务中，能看到切实的业务结果，更加确认自己希望长期做产品。</p>
-            <a href="#" target="_blank">查看项目</a>  
-          </article>
-          
-          <article class="project-card">
-            <h3>京东 · 策略产品运营</h3>
-            <p class="timeframe">2024.12-2024.05 </p>
-            <p class="background-summary">【核心背景】主站推进“搜推内容化”撬动流量增长，但搜索场景存在内容分发无结果率高、搜索逻辑不一致、内容质量与用户体验差等问题，导致内容曝光不足、UCTR 偏低。聚焦搜索内容分发场景，通过策略优化提升内容曝光和UCTR，提升DAU+20W、培养用户内容搜索心智。</p>
-            <ul class="achievement-list">
-              <li>
-                评测体系搭建。设计完善“分发概率 - 搜索解释性 - 内容质量 - 用户体验” 评测框架，定期走查核心品类 TOP query，输出可落地的调优报告、为策略迭代提供数据支撑。跑通 “评测 - 反馈 - 调优” 例行流程，沉淀为可复用方案。
-              </li>
-              <li>
-                场景转化提升。聚焦头部大卡和搜索穿插两大核心场景，通过例行走查、业务反馈和竞品调研，设计外露核心利益点、用户预约功能、OP运营干预机制等策略并推动落地，提升用户点击意愿。
-              </li>
-              <li>
-                内容覆盖提升。针对穿插无内容结果率高等问题，归因内容供给差异大、召回算法单一，推动内容形态联动、多路召回等需求落地；分析高曝光高转化内容特征，从类目、商品和内容维度分析，输出 “垂类标签 +特征复用”方案、支撑业务增长。
-                协调多方资源推动策略上线，无穿插概率从80%降至60%，搜索直播DAU+20%、UCTR+1%，策略对结果有正向支撑。
-              </li>
-              <li>
-                体验一致性。针对双频道搜索不一致问题，推动搜索逻辑改造、统一频道心智，保障体验完整性；跑查24-25年频道搜索数据，聚焦搜索体验问题并提供优化方案。
-              </li>
-          </ul>
-          <p class="target and result">内部定位更偏向业务产品，聚焦搜索内容分发策略、提升内容 DAU。职场进阶与社会化，快速进入陌生专业领域并理解相关逻辑，在 Mentor 指导和自己的主动争取下，逐步参与策略制定和评估、落地。锻炼了在复杂业务中快速学习和落地的能力，也让我意识到自己更希望做端到端的产品工作。</p>
-            <a href="#" target="_blank">查看项目</a>  
-          </article>
-
-            <article class="project-card">
-            <h3>小米·增长产品运营</h3>
-            <p class="timeframe">2024.03-2024.06 </p>
-            <p class="background-summary">【核心背景】应用商店受限于工具属性，缺失新流量路径、营收能力下降。以内容化为切入点探索增长路径，通过运营策略优化，提升主动DAU和留存，培养用户心智。</p>
-            <ul class="achievement-list">
-              <li>
-                push提效。针对“push触达精准度低、流量资源浪费” 问题，将端内产品迭代及运营落地页作为素材，从人群需求、内容文案、发布时间三个维度升级push策略；同步梳理人工策略，识别出可转为算法静默的低价值推送（如清理品宣），释放push运营空间。push CTR 平均较同期+0.06%，非忠诚用户点击+13.5%，有效沉淀push能力。
-              </li>
-              <li>
-                场景分层运营。针对“用户主动打开意愿低、后端转化弱”问题，锚定“影视综热点 + 周期性节点”两大高价值场景，通过分析用户行为数据、挖掘品类细分需求，分期分人群设计落地页及话题页，并分层触达，提升主动日活和留存、引导用户向后端链路增长。完成5个运营项目，平均提升DAU 8-12w、带来6w+下载PV，同步沉淀运营逻辑及热点评估模型。  
-              </li>
-              <li>
-                内容产品导流。聚焦应用号用户心智提升，从“筛选内容触达用户+社区调研定位痛点+优化曝光导流路径”链路培养用户心智。
-              </li>
-          </ul>
-          <p class="target and result">接触互联网真实的业务逻辑，建立对产品、运营、BI等角色的基础认知，理解DAU、留存等核心指标背后的逻辑，具象化明白产品经理角色该补充哪些能力。</p>
-            <a href="#" target="_blank">查看项目</a>  
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section content-page">
-      <div class="container">
-        <h2>作品集</h2>
-        
-        <h3>广告营销</h3>
-        <div class="portfolio-list">
-          <div class="portfolio-item">
-            <h4>市场策划案</h4>
-            <p class="portfolio-desc">广告策划全案</p>
-            <a href="assets/marketing planner.pdf" download class="portfolio-link">📄 查看/下载</a>
-          </div>
-          <div class="portfolio-item">
-            <h4>欧莱雅商赛</h4>
-            <p class="portfolio-desc">2022BRANDSTORM</p>
-            <a href="assets/L’ORÉAL.pdf" download class="portfolio-link">📄 查看/下载</a>
+          <div class="about-note-list">
+            <p>高中阶段选修中国大学先修课程-微观经济学，并通过考核（前70%+），同时获得财经素养大赛全国一等奖</p>
+            <p>本科阶段转入广告学专业，学院培养体系多元；研究生阶段从学术研究转向市场化就业，开展互联网实习，并确立产品经理的职业目标</p>
           </div>
         </div>
 
-        <h3>产品实践</h3>
-        <div class="portfolio-list">
-          <div class="portfolio-item">
-            <h4>实习作品</h4>
-            <p class="portfolio-desc">部分（待更新）</p>
-            <a href="assets/internship.pdf" download class="portfolio-link">📄 查看/下载</a>
-          </div>
-          <div class="portfolio-item">
-            <h4>日常记录</h4>
-            <p class="portfolio-desc">持续记录读书笔记、产品思考与灵感备忘</p>
-            <a href="https://zbe4ogr70y.feishu.cn/base/OFjqb6GSmanOmksVY6McF5sen0g?table=tbl9LW6LMKM442iz&view=vewWOmaE1u" target="_blank" rel="noopener" class="portfolio-link">📓 在线查看</a>
+        <div class="about-block">
+          <h3>核心能力</h3>
+          <div class="skill-grid-2col">
+            <div class="skill-card">
+              <h3>数据驱动与实验调优能力</h3>
+              <p>善于通过用户行为漏斗拆解、异动归因与 Query 特征等方法挖掘现存问题，并基于此输出方案，结合 AB 实验验证策略有效性，具备从数据诊断到策略落地的完整闭环分析能力，驱动指标增长。</p>
+            </div>
+            <div class="skill-card">
+              <h3>用户与市场洞察能力</h3>
+              <p>擅长通过深度访谈、桌面研究、内容分析等方式洞察用户深层需求，从模糊场景中提炼核心结论与业务机会，为策略决策提供依据。</p>
+            </div>
+            <div class="skill-card">
+              <h3>产品全流程闭环与协作推进</h3>
+              <p>覆盖从「问题定义 → 方案设计 → AB 实验 → 效果复盘 → 策略沉淀」的完整产品周期，能协同运营、研发、设计、商业化等多方资源推动落地，具备跨团队沟通与排期管理能力。</p>
+            </div>
+            <div class="skill-card">
+              <h3>理性决策与规则型思维</h3>
+              <p>非典型文科生，更擅长数理科目，擅长拆解规则，面对模糊问题能快速建立分析框架，偏好用「因果链条 + 量化指标」做判断。</p>
+            </div>
+            <div class="skill-card">
+              <h3>目标感与结果导向</h3>
+              <p>思路清晰，做事靠谱，主动调整专业与发展路径，以目标驱动行动，擅长在严谨分析后小步迭代、笃定执行。携程实习中，产品决策带来的指标反馈成为职业摸索过程中的 aha moment。</p>
+            </div>
+            <div class="skill-card">
+              <h3>创意策划与应变能力</h3>
+              <p>本科广告学训练赋予从模糊需求中定义问题、产出创意方案的能力（曾获欧莱雅商赛奖项、公关策划大赛国二、执导年度大戏等），灵活变通。</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="looking-for" class="section content-page">
-  <div class="container">
-    <h2>我在寻找什么</h2>
-    <p>
-      <strong>【为什么选择产品：why product】</strong><br>
-      现实考量：不避讳地说，薪资和发展是现实考量的一部分。<br>
-    </p>
-    <p>
-      能力复用：在广告专业的训练中，我需要基于产品问题或市场痛点，完整策划方案：从市场调研（PEST、SWOT、数据等）、消费者洞察（用户访谈、行业报告等），到核心策略、落地节奏、内容与渠道规划，再到预算与成本控制...全方位思考策划。<br>
-      这套逻辑链路与互联网产品高度相似——发现问题、设计方案、跟进落地、解决真正的业务和用户问题。<br>
-    </p>
-    <p>
-      价值观念：比起一次性落地，我更希望看到长期主义、能反复验证与优化的产品结果。<br>
-      希望在「业务产品」方向深耕，尤其关注本地生活和电商零售，希望在更复杂、更有挑战的系统里创造价值，通过产品方案提升交易转化，让平台更高效，也让用户的生活更方便。<br>
-    </p>  
-    <p>
-      <strong>【产品哲学：在复杂中求平衡】</strong><br>
-      刚开始接触产品时，我对这份工作有理想化的想象，觉得这是「创造价值、改变世界」的角色，这也是这个岗位一直对外宣传的口号。<br>
-      后来在实习和观察中，我看到了商业世界和人性的复杂——人文情怀并不总能轻易落地。<br>
-      我理解商业目标与用户体验之间的复杂性，但正是这种复杂，使得这份工作有趣：我相信复杂系统中的平衡与优化是长期价值的来源。<br>
-    </p>
-  </div>
-</section>
-
-
-    <section id="contact" class="section content-page">
+    <!-- 过往经历 -->
+    <section id="experience" class="page">
       <div class="container">
-        <h2>联系我</h2>
-        <p>你可以通过以下方式联系我：</p>
-        <ul class="contact-list">
-          <li>邮箱：<a href="mailto:wenqing2357@163.com">wenqing2357@163.com</a></li>
-          <li>微信 / 电话：17327008687</li>
-        </ul>
-        <h3>个人特质与期望</h3>
-    <ul class="soft-skills-list">
-      <li>特长爱好：琵琶、爵士舞、写作、旅行、探店、阅读 </li>
-      <li>自我定位：致力于通过营销思维和产品思维，发挥AI时代的想象力，解决业务目标、人性与效率之间的复杂平衡难题</li>
-      <li>方向期望：能够实现交易转化提升的业务产品方向（本地生活/电商零售），期待与优秀团队共同探索新兴技术（AI）落地。</li>
-    </ul>
-        <p>「与优秀者同行」是我求学阶段荣誉证书上常出现的一句话。那时我是那套评价体系里的「优秀者」之一。<br>
-          现在我见识了更广阔的天地人众和更包容多元的评价体系，我希望能和真正优秀的人与团队，一起做真正有价值、有挑战、也有趣的事情。<br>
-          如果你愿意了解一个对人和社会有好奇心的产品新人，欢迎随时联系我。
-        </p>
+        <p class="page-subtitle">从增长运营到策略产品，围绕用户和流量展开实习，逐步聚焦流量策略与交易转化，个人对于产品的理解见帖文：<a href="http://xhslink.cn/o/2VGTNqvR5pH" target="_blank" rel="noopener">记录一些对「产品」的想法</a></p>
+
+        <div class="timeline">
+          <article class="exp-card">
+            <div class="exp-header">
+              <span class="exp-company">携程 · 用户产品经理</span>
+              <div class="exp-meta">
+                <span class="exp-dept">旅游事业群-景点玩乐业务部</span>
+                <span class="exp-date">2025.07 – 2025.10</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">流量转化</span>
+              <span class="tag">列表页策略</span>
+              <span class="tag">c端用户体验</span>
+            </div>
+            <p class="exp-context">
+              门票频道列表页作为主要流量入口，存在用户决策成本高、人货匹配效率低等问题，流量转化能力不足、制约业务增长。通过优化流量路径及信息展示，提升列表页转化效率与选购体验。
+            </p>
+            <h4 class="exp-section-label">核心产出</h4>
+            <ul class="exp-achievements">
+              <li>
+                <strong>筛选结构优化：</strong>针对筛选结构老化、粗放的痛点，下钻用户数据并对标美团、Klook 等竞品，发现原有布局存在流量分配失衡、垂类筛选缺失等问题。主导设计双站「高优筛选前置 + 垂类场景筛选」方案，前置退改等用户决策强相关的筛选项、降低积分等低转化筛选优先级，并补充日游、电话卡等垂类的细分筛选（如团队人数）。通过 AB 实验动态调优，同步完善数据埋点支持后续迭代。全量上线，Ctrip UCTR +7%、UCVR +4%，Trip UCTR +1%、UCVR +2%。
+              </li>
+              <li>
+                <strong>高潜类目挖掘：</strong>针对产线收益结构固化、客群活力不足的痛点，调研抖音、小红书平台玩乐趋势，识别疗愈、徒步等高热玩法，并提取核心关键词搜排站内供给，发现「周边游」等高热类目存在「供给充足但埋藏过深、商品排序靠后、商卡展示同质化」等问题。产出调研报告驱动新增「周边游」入口聚合分发，负责强化商卡「距离/位置」信息展示、降低用户决策成本；协同「日游」入口升级，对齐一二级入口标签。「日游」一级入口 UCTR +10%、UCVR +3%，「周边游」一级入口已上线。
+              </li>
+              <li>
+                <strong>信息展示优化：</strong>针对商卡原生标题质量低于竞品的痛点，协同运营侧验证 AI 改写可行性。负责双站 AB 实验方案设计、500+ 样本筛选及效果分析。实验验证 AI 改写在「日游」等非标类目中有增益；针对部分商品 UCTR 和 UCVR 的背离现象，发现「标题截断」「内外页信息不同步」等问题，并输出分析报告。Trip UCTR +2%、Ctrip 日游 UCVR +3%，为「AI 改写 + 人工调优」后台产品化路径提供依据。
+              </li>
+            </ul>
+            <p class="exp-reflection">以完整产品角色参与项目，从需求分析、方案设计到联动运营和数据同学，将前两段实习方法应用到真实业务，看到切实业务结果。</p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <span class="exp-company">京东 · 策略产品运营</span>
+              <div class="exp-meta">
+                <span class="exp-dept">京东零售-平台营销中心-内容生态部</span>
+                <span class="exp-date">2024.12 – 2025.05</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">流量分发</span>
+              <span class="tag">搜推内容化</span>
+              <span class="tag">c端用户体验</span>
+            </div>
+            <p class="exp-context">
+              主站以搜推内容化带动流量增长，搜索场景存在内容曝光不足、用户点击低等基础问题。聚焦主搜列表页与直播频道，通过评测定位分发问题，与搜索产研协作优化分发策略，提升分发效果。
+            </p>
+            <h4 class="exp-section-label">核心产出</h4>
+            <ul class="exp-achievements">
+              <li>
+                <strong>内容分发评测：</strong>针对内容分发缺乏系统评估的痛点，搭建主搜内容评测 SOP。周期化抽样走查核心品类 TOP Query ×100，从「分发概率、相关性、内容质量、用户体验」4 个维度开展主观评测，并系统拆解 Badcase，定位「无分发结果、相关性弱、内外页信息不一致」等 5 类核心问题，并监测问题占比、产出评测报告，为策略迭代提供 Badcase 及优先级依据。跑通协同搜索中台的可复用流程。
+              </li>
+              <li>
+                <strong>主搜体验优化：</strong>聚焦头部大卡和穿插场景，从 Query 切入开展用户行为分析，调研淘宝、拼多多、抖音等竞品的内容搜索生态，并结合业务反馈，发现「利益点透传不足 / 用户预约链路长 / 无商家运营干预、客诉多」等问题，输出「价格利益点外露」、「直播预约」、「OP 运营干预」等优化方案并推动落地。核心品类无穿插率从 80% 降至 60%，搜索直播 DAU +20%、UCTR +1%。
+              </li>
+              <li>
+                <strong>频道策略优化：</strong>针对直播频道搜索量翻倍但体验滞后问题，提取近一年数据，通过竞品对标、Query 特征分析与线上抽检，发现主播 & 商品召回精度低、账号排序不合理等问题，设计补充类目相关性召回、支持关键词干预等策略，输出分析报告；从「类目、商品、内容」3 个维度分析高转化内容特征，发掘高频、低价、低决策门槛品类转化优势，输出「垂类标签 + 特征复用」方案，为策略迭代提供参考。
+              </li>
+            </ul>
+            <p class="exp-reflection">聚焦搜索内容分发策略，逐步参与策略制定、评估与落地，锻炼了在复杂业务中快速学习和落地的能力。</p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <span class="exp-company">腾讯 · 高校用户研究员</span>
+              <div class="exp-meta">
+                <span class="exp-dept">IEG 市场与用户研究部</span>
+                <span class="exp-date">2024.11 – 2025.04</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">用户访谈</span>
+              <span class="tag">桌面研究</span>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <span class="exp-company">小米 · 增长产品运营</span>
+              <div class="exp-meta">
+                <span class="exp-dept">互联网业务部-应用生态部</span>
+                <span class="exp-date">2024.03 – 2024.06</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">流量留存</span>
+              <span class="tag">场景内容化</span>
+              <span class="tag">push策略</span>
+            </div>
+            <p class="exp-context">
+              应用商店受限于工具属性，用户主访意愿低、活跃度不足。通过精细化触达和场景化运营探索内容化增长，提升用户活跃。
+            </p>
+            <h4 class="exp-section-label">核心产出</h4>
+            <ul class="exp-achievements">
+              <li>
+                <strong>场景分层运营：</strong>工具属性导致用户主访和停留意愿弱，借助「影视综热点+周期性节点」设计场景化运营方案。分析节点（如五一、高考）同比数据，识别用户高需求应用并对标竞品话题页，分期、分人群设计运营方案，协调设计与商业化团队置换首页 tab、输入法等高价值资源位，并分层触达。完成《庆余年2》等 5 个专项，平均 DAU +10w、下载 PV +6w。
+              </li>
+              <li>
+                <strong>push 策略优化：</strong>针对 push 精准度低的问题，以产品迭代及运营页为素材，从「用户、文案、发送时段」3 个维度优化 push 策略，AB 实验小流量验证后扩量；梳理 push 方案，识别「清理品宣」等可转为自动化推送、释放通道资源。push CTR 平均较同期 +0.1%，非忠诚用户页面 CTR +13%。
+              </li>
+              <li>
+                <strong>产品体验迭代：</strong>搜索分栏改版方案缺乏用户反馈，配合开展线下 20+ 用户深度访谈与竞品调研，整理分析用户数据并拆解现行搜索页，输出 PAD/手机端体验优化报告，辅助产品决策；参与「应用号」产品专项，负责定向触达、社区负反馈治理（FAQ）及导流路径实验分析。
+              </li>
+            </ul>
+            <p class="exp-reflection">开启互联网探索，建立对产品、运营、BI 等角色的认知，理解 DAU、留存等核心指标。</p>
+          </article>
+        </div>
+
+        <div class="experience-ai">
+          <h3 class="subsection-title">AI经验与想法</h3>
+          <ul class="ai-list">
+            <li>
+              <strong>AI 社会实践：</strong>企业走访调研与社区科普教学
+            </li>
+            <li>
+              <strong>Vibecoding：</strong>个人网页（公开），简易内容创作工作台（私人）
+            </li>
+            <li>
+              <strong>AI 产品研究：</strong>AI 情感陪伴产品的用户需求与现存问题
+            </li>
+            <li class="ai-item-with-figure">
+              <strong>AI 思考：</strong>真实需求与业务场景是最重要的，技术最终还是得服务于现实社会
+              <p class="ai-thinking-link">
+                <a href="http://xhslink.cn/o/348p89HKwdw" target="_blank" rel="noopener">http://xhslink.cn/o/348p89HKwdw</a>
+              </p>
+              <p class="ai-carousel-hint">点击放大 · scroll →</p>
+              <div class="ai-carousel">
+                <button type="button" class="ai-nav ai-nav-prev" aria-label="上一张">‹</button>
+                <div class="ai-scroll">
+                  <figure class="ai-slide">
+                    <button type="button" class="ai-zoom-trigger" aria-label="放大查看：电商相关思考梳理（1/3）">
+                      <img src="assets/ai-thinking-01.png" alt="电商相关思考梳理（1/3）" loading="lazy" />
+                    </button>
+                    <figcaption>1 / 3</figcaption>
+                  </figure>
+                  <figure class="ai-slide">
+                    <button type="button" class="ai-zoom-trigger" aria-label="放大查看：电商相关思考梳理（2/3）">
+                      <img src="assets/ai-thinking-02.png" alt="电商相关思考梳理（2/3）" loading="lazy" />
+                    </button>
+                    <figcaption>2 / 3</figcaption>
+                  </figure>
+                  <figure class="ai-slide">
+                    <button type="button" class="ai-zoom-trigger" aria-label="放大查看：AI 电商破局方向（3/3）">
+                      <img src="assets/ai-thinking-03.png" alt="AI 电商破局方向（3/3）" loading="lazy" />
+                    </button>
+                    <figcaption>3 / 3</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="ai-nav ai-nav-next" aria-label="下一张">›</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-portfolio">
+          <h3 class="subsection-title">作品集</h3>
+          <p class="portfolio-hint">scroll →</p>
+
+          <div class="portfolio-carousel">
+            <button type="button" class="portfolio-nav portfolio-nav-prev" aria-label="上一张">‹</button>
+            <div class="portfolio-scroll">
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/00-loreal-01.png" alt="欧莱雅商赛 Inclusive Beauty 2030 市场与用户洞察" loading="lazy" />
+              <figcaption>欧莱雅商赛</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/00-loreal-02.png" alt="欧莱雅商赛 Beauty Stabilizer 产品方案" loading="lazy" />
+              <figcaption>欧莱雅商赛</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/00-loreal-03.png" alt="欧莱雅商赛 Product Launch 传播方案" loading="lazy" />
+              <figcaption>欧莱雅商赛</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/01-portfolio.png" alt="调研分析与策略推导能力概览" loading="lazy" />
+              <figcaption>调研分析与策略推导 · 能力概览</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/02-portfolio.png" alt="武昌文旅策划案与金龙泉精酿新品策划案宏观市场分析" loading="lazy" />
+              <figcaption>宏观市场分析 · 武昌文旅 / 金龙泉精酿</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/03-portfolio.png" alt="金龙泉精酿与游戏品牌周年传播案企业品牌分析" loading="lazy" />
+              <figcaption>企业 / 品牌分析 · 金龙泉精酿 / 游戏品牌周年传播</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/04-portfolio.png" alt="武昌文旅与金龙泉精酿消费者洞察" loading="lazy" />
+              <figcaption>消费者洞察 · 武昌文旅 / 金龙泉精酿</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/05-portfolio.png" alt="穿搭APP产品创意策划案" loading="lazy" />
+              <figcaption>产品创意 · 穿搭 APP 策划案</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/06-portfolio.png" alt="HEY声活声音社交平台品牌创意" loading="lazy" />
+              <figcaption>品牌创意 · HEY 声活声音社交平台</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/07-portfolio.png" alt="金龙泉精酿撞南墙回甘系列新产品定位与营销" loading="lazy" />
+              <figcaption>新产品定位 · 金龙泉精酿「撞南墙 · 回甘系列」</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/08-portfolio.png" alt="产品营销活动直播事件营销方案" loading="lazy" />
+              <figcaption>产品营销活动 · 直播事件营销</figcaption>
+            </figure>
+            <figure class="portfolio-slide">
+              <img src="assets/portfolio/09-portfolio.png" alt="游戏传播与剧宣文案创意" loading="lazy" />
+              <figcaption>创意传播 · 游戏展 / 剧宣文案</figcaption>
+            </figure>
+            </div>
+            <button type="button" class="portfolio-nav portfolio-nav-next" aria-label="下一张">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 求职信息 -->
+    <section id="seeking" class="page">
+      <div class="container">
+
+        <div class="seeking-block">
+          <h3>目标岗位</h3>
+          <p class="seeking-value">产品经理（策略方向）</p>
+          <p class="seeking-note">可接受产品/策略运营</p>
+        </div>
+
+        <div class="seeking-block">
+          <h3>业务偏好</h3>
+          <ul class="seeking-list">
+            <li>本地生活、电商零售等交易型业务</li>
+            <li>数据驱动、可参与完整产品链路的团队</li>
+          </ul>
+        </div>
+
+        <div class="seeking-block">
+          <h3>求职经历</h3>
+          <ul class="seeking-timeline">
+            <li>
+              <span class="seeking-time">2025.09</span>
+              <span class="seeking-event">确认携程暂无 HC，开始规模化投递秋招</span>
+            </li>
+            <li>
+              <span class="seeking-time">2025.11</span>
+              <span class="seeking-event">快手电商终面后泡池子挂</span>
+            </li>
+            <li>
+              <span class="seeking-time">2026.05</span>
+              <span class="seeking-event">得物终面后排序挂</span>
+            </li>
+            <li>
+              <span class="seeking-time">2026.07</span>
+              <span class="seeking-event">新浪 OC 后 HC 回撤</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="seeking-block">
+          <h3>联系方式</h3>
+          <div class="contact-cards">
+            <a href="mailto:wenqing2357@163.com" class="contact-card">
+              <span class="contact-label">邮箱</span>
+              <span class="contact-value">wenqing2357@163.com</span>
+            </a>
+            <div class="contact-card">
+              <span class="contact-label">微信 / 电话</span>
+              <span class="contact-value">17327008687</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="seeking-block">
+          <h3>个人特质</h3>
+          <p>inxj</p>
+          <p>特长爱好：琵琶、写作、solotrip、阅读、探店、音乐</p>
+          <div class="contact-cta">
+            <a href="assets/zuowenqing resume.pdf" download class="btn btn-primary">
+              下载完整简历
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© 2025 左文清. All rights reserved.</small>
+      <small>个人简历</small>
     </div>
   </footer>
 
-  <script>
-    // 页面切换功能
-    document.addEventListener('DOMContentLoaded', function() {
-      const navLinks = document.querySelectorAll('.nav-link');
-      const contentPages = document.querySelectorAll('.content-page');
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-label="图片预览">
+    <button type="button" class="lightbox-close" aria-label="关闭">×</button>
+    <img class="lightbox-img" src="" alt="" />
+  </div>
 
-      // 切换页面函数
-      function showPage(pageId) {
-        // 隐藏所有页面
-        contentPages.forEach(page => {
-          page.classList.remove('active');
-        });
-
-        // 显示目标页面
-        const targetPage = document.getElementById(pageId);
-        if (targetPage) {
-          targetPage.classList.add('active');
-        }
-
-        // 更新导航链接状态
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('data-page') === pageId) {
-            link.classList.add('active');
-          }
-        });
-      }
-
-      // 为所有导航链接添加点击事件
-      navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const pageId = this.getAttribute('data-page');
-          showPage(pageId);
-        });
-      });
-
-      // 默认显示首页
-      showPage('home');
-    });
-  </script>
+  <script src="script.js?v=202507300449"></script>
 </body>
 </html>
